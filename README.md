@@ -45,7 +45,8 @@ The Discriminator's role is to distinguish between real and generated images. It
 
 ![Discriminator Architecture](descriminator.jpg)
 
-##Usage
+
+## Usage
 1. Clone the repository
 ```bash
   git clone https://github.com/abhinavbura/fashiongenerator.git
