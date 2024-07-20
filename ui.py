@@ -67,11 +67,11 @@ def build_model():
 
 def load_weights():
     global generator
-    generator = load_model('G:/majorproject/maourproject/fashiongenerator/dataset.h5')
+    generator = load_model('dataset.h5')
 
 def generate_images():
     latent_dim=LATENT_DIM
-    generator = load_model('G:/majorproject/maourproject/fashiongenerator/dataset.h5')
+    generator = load_model('dataset.h5')
     seed = tf.random.normal([16, latent_dim])
     generated_images = generator(seed)
     generated_images = (generated_images * 127.5) + 127.5
